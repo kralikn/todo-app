@@ -27,8 +27,8 @@ const Register = () => {
 
     if (!values.username.trim()) {
       errors.username = 'Username required';
-    } else if (values.username.trim().length < 4) {
-      errors.password = 'Username needs to be 4 characters or more';
+    } else if (values.username.length < 4) {
+      errors.username = 'Username needs to be 4 characters or more';
     }
 
     if (!values.email) {
