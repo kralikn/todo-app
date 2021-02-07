@@ -1,8 +1,19 @@
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Login from './components/Login'
+import Register from './components/Register'
+
 function App() {
   return (
-    <div className="App">
-      <h1>My todo list</h1>
-    </div>
+    <>
+      <Router>
+        <Route exact path='/'>
+          <Login/>
+        </Route>
+        <Route exact path='/register'>
+          <Register/>
+        </Route>
+      </Router>
+    </>
   );
 }
 
